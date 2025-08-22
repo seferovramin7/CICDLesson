@@ -38,6 +38,14 @@ To make this application live, you need to follow these steps:
     *   `DO_USERNAME`: The username to use to connect to your droplet.
     *   `DO_SSH_KEY`: The private SSH key to use to connect to your droplet.
 
+    ```bash
+    ssh-keygen -t rsa -b 4096
+    ```
+
+    ```bash
+    cat ~/.ssh/id_rsa.pub
+    ```
+
 ### 3. Push your code
 
 Once you have completed the steps above, you can push your code to the `master` branch of your GitHub repository. This will trigger the CI/CD pipeline, which will build and deploy the application to your Digital Ocean droplet.
