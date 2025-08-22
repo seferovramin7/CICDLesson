@@ -28,7 +28,7 @@ To make this application live, you need to follow these steps:
     mkdir -p /path/to/your/app
     ```
 
-### 2. Configure your GitHub repository
+### 2. Configure your GitHub repository 
 
 1.  Go to your GitHub repository and click on the "Settings" tab.
 2.  In the left sidebar, click on "Secrets and variables" and then "Actions".
