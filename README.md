@@ -2,7 +2,7 @@
 
 This is a simple Spring Boot application with a CI/CD pipeline that deploys the application to a Digital Ocean droplet.
 
-## How to make it live
+## How to make it live 
 
 To make this application live, you need to follow these steps:
 
