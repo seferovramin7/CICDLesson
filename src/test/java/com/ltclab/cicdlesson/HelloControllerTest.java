@@ -19,6 +19,6 @@ public class HelloControllerTest {
     public void hello() throws Exception {
         mockMvc.perform(get("/"))
                 .andExpect(status().isOk())
-                .andExpect(content().string("Hello, World!"));
+                .andExpect(content().string("Hellooooo, World!"));
     }
 }
