@@ -34,13 +34,13 @@ jobs:
         with:
           arguments: build
 
-      # 4. Deploys the application to your Digital Ocean server via SSH
+      # 4. Deploys the application to your Digital Ocean server via SSH using a password
       - name: Deploy to Digital Ocean
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.DO_HOST }}
           username: ${{ secrets.DO_USERNAME }}
-          key: ${{ secrets.DO_SSH_KEY }}
+          password: ${{ secrets.DO_PASSWORD }} # <-- Updated this line
           script: |
             cd /path/to/your/app
             git pull
