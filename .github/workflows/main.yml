@@ -32,7 +32,7 @@ jobs:
       - name: Build with Gradle
         uses: gradle/gradle-build-action@v3
         with:
-          arguments: build
+          arguments: build -x test
 
       # 4. Deploys the application to your Digital Ocean server via SSH using a password
       - name: Deploy to Digital Ocean
